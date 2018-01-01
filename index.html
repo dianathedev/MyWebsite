@@ -1,40 +1,24 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="UTF-8">
-  <title>Dianathedev's Jams</title>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="css/style.css">
-
-</head>
-<body>
+<html lang="en" >
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700i,900i|Raleway:200i,400,500,700" rel="stylesheet">
+    <style>
+      .square {
+          float:left;
+          position: relative;
+          width: calc(100%/10);
+          padding-bottom : calc(100%/10); /* = width for a 1:1 aspect ratio */
+          background-position:center center;
+          background-repeat:no-repeat;
+          background-size: cover;
+      }
+    </style>
   </head>
-  <body>
-    <div class="wrapper">
-      <div class="container">
-        <div class="header">
-          <p><a href="http://last.fm/user/dianathedev"></a> <span class="time"></span><time class="timeago"></time></p>
-        </div>
-        <a class="cover-container">
-          <img class="cover">
-        </a>
-        <!-- <p class="artist-track">
-          <span class="track"></span> by
-          <span class="artist"></span>
-        </p>
-        <p class="album" title="Album"></p> -->
-      </div>
-    </div>
+
+  <body style="margin: 0px;">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.5.4/jquery.timeago.min.js'></script>
+    <script src='https://cdn.rawgit.com/briangonzalez/jquery.adaptive-backgrounds.js/master/src/jquery.adaptive-backgrounds.js'></script>
+    <script src="js/index.js"></script>
+    <div id="root"/>
   </body>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.5.4/jquery.timeago.min.js'></script>
-  <script src='https://cdn.rawgit.com/briangonzalez/jquery.adaptive-backgrounds.js/master/src/jquery.adaptive-backgrounds.js'></script>
-  <script src="js/index.js"></script>
-
-</body>
 </html>

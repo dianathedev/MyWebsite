@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    font-family:'Raleway', sans-serif;
+    font-family: Georgia;
     line-height: 1.5;
     font-size: 18px;
     height: 100%;
@@ -69,3 +69,17 @@ img.cover {
     margin-top: 5px;
 }
 
+.blurred-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(4vmax);
+    position: absolute;
+    top: -4vmax;
+    left: -4vmax;
+    width: calc(100vw ~"+" 8vmax);
+    height: calc(100vh ~"+" 8vmax);
+    z-index: -1;
+    float: none;
+    opacity: 0.7;
+}
