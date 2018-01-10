@@ -1,10 +1,12 @@
-* {
+/** {
   box-sizing: border-box;
 }
+*/
 html {
   height: 100%;
   overflow: hidden;
 }
+
 body {
   font-family: Georgia;
   line-height: 1.5;
@@ -12,51 +14,61 @@ body {
   height: 100%;
   background-size: 0 0;
 }
+
 img {
   max-width: 100%;
 }
+
 img.cover {
   cursor: pointer;
   transition: all 0.35s ease;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
 }
+
 img.cover:hover {
   transform: scale(1.05);
   transform-origin: center bottom;
 }
+
 .wrapper {
   width: 100%;
   height: 100%;
   text-align: center;
-  padding: 1em;
+  /*padding: 1em;*/
   display: table;
 }
+
 .container {
   max-width: 300px;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   display: table-cell;
   vertical-align: middle;
 }
+
 .header {
   margin-bottom: 1.5em;
 }
+
 .header a {
   color: inherit;
-  border-bottom: 1px solid currentcolor;
+  /*border-bottom: 1px solid currentcolor;*/
   text-decoration: none;
   padding-bottom: 2px;
 }
+
 .header a:hover {
   border-bottom: 0;
 }
+
 .artist-track {
   font-style: italic;
 }
-.artist,
-.track {
+
+.artist, .track {
   font-weight: bold;
   font-style: normal;
 }
+
 .album {
   font-family: arial;
   text-transform: uppercase;
@@ -64,6 +76,7 @@ img.cover:hover {
   letter-spacing: 0.15em;
   margin-top: 5px;
 }
+
 .blurred-background {
   background-repeat: no-repeat;
   background-size: cover;

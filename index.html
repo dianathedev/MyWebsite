@@ -1,25 +1,63 @@
 <!DOCTYPE html>
-<html lang="en" >
-  <head>
-    <style>
-      .square {
-          float:left;
-          position: relative;
-          width: calc(100%/10);
-          padding-bottom : calc(100%/10); /* = width for a 1:1 aspect ratio */
-          background-position:center center;
-          opacity: 0.15;
-          background-size: cover;
-      }
-    </style>
-  </head>
+<html lang="en">
 
-  <body bgcolor="#000000"  style="margin: 0px;">
-    <div id="root"/>
-  </body>
+<head>
+  <title>Dianathedev's Jams</title>
+  <style>
+    .square {
+      float: left;
+      position: relative;
+      width: calc(100%/10);
+      padding-bottom: calc(100%/10);
+      /* = width for a 1:1 aspect ratio */
+      background-position: center center;
+      opacity: 0.20;
+      background-size: cover;
+    }
+  </style>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.5.4/jquery.timeago.min.js'></script>
-  <script src='https://cdn.rawgit.com/briangonzalez/jquery.adaptive-backgrounds.js/master/src/jquery.adaptive-backgrounds.js'></script>
-  <script src="js/index.js"></script>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: right;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111;
+    }
+  </style>
+</head>
+
+<body bgcolor="#000000" style="margin: 0px;">
+  <div id="root" />
+</body>
+
+<ul>
+  <li style="float:left"><a class="active" href="#home">Dianathedev</a></li>
+  <li><a class="active" href="#contact">Contact</a></li>
+  <li><a href="#about">About Me</a></li>
+  <li><a href="#projects">Projects</a></li>
+</ul>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.5.4/jquery.timeago.min.js"></script>
+<script src="https://cdn.rawgit.com/briangonzalez/jquery.adaptive-backgrounds.js/master/src/jquery.adaptive-backgrounds.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/index.js"></script>
+
 </html>
